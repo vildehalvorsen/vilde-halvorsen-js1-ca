@@ -1,0 +1,40 @@
+.beer-image {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+h1 {
+    margin: 100px 0px 50px;
+}
+
+.beer-tagline {
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.beer-abv {
+    font-weight: bold;
+}
+
+.text-container {
+    text-align: center;
+    max-width: 580px;
+    margin: 30px auto;
+}
+
+.detailsContainer {
+    margin: 0px 20px;
+}
+
+.error {
+    width: 300px;
+    margin: 200px auto;
+}
+
+.loader {
+    margin-top: 250px;
+}
