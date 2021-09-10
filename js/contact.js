@@ -1,17 +1,19 @@
 const formContainer = document.querySelector(".formContainer");
-const contactForm = document.querySelector("#contact");
+const form = document.querySelector("#contact");
 
 const fullName = document.querySelector("#fullname");
 const fullNameError = document.querySelector("#fullnameerror");
 
-const address = document.querySelector("#address");
-const addressError = document.querySelector("#addresserror");
+const subject = document.querySelector("#subject");
+const subjectError = document.querySelector("#subjecterror");
 
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailerror");
 
-const subject = document.querySelector("#subject");
-const subjectError = document.querySelector("#subjecterror");
+const address = document.querySelector("#address");
+const addressError = document.querySelector("#addresserror");
+
+
 
 
 function validateContactForm() {
@@ -46,7 +48,7 @@ function validateContactForm() {
 }
 
 
-contactForm.addEventListener("submit", validateContactForm);
+form.addEventListener("submit", validateContactForm);
 
 
 
@@ -55,7 +57,6 @@ function submitContactform() {
                                     <h2>Thanks!</h2>
                                     <p id="submitmessage">Your message has been sent.</p>
                                 </div>`;
-    // contactForm.reset();
 }
 
 function checkValue(value, length) {
