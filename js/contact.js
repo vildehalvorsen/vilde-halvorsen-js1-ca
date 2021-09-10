@@ -1,5 +1,7 @@
 const formContainer = document.querySelector(".formContainer");
 const form = document.querySelector("#contact");
+const submitMessage = document.querySelector(".submitMessage");
+
 
 const fullName = document.querySelector("#fullname");
 const fullNameError = document.querySelector("#fullnameerror");
@@ -12,8 +14,6 @@ const emailError = document.querySelector("#emailerror");
 
 const address = document.querySelector("#address");
 const addressError = document.querySelector("#addresserror");
-
-
 
 
 function validateContactForm() {
@@ -53,10 +53,12 @@ form.addEventListener("submit", validateContactForm);
 
 
 function submitContactform() {
-    formContainer.innerHTML = `<div class="submitMessage">
+    formContainer.innerHTML += `<div class="submitMessage">
                                     <h2>Thanks!</h2>
                                     <p id="submitmessage">Your message has been sent.</p>
-                                </div>`;
+                                </div>
+                                `;
+    form.reset();
 }
 
 function checkValue(value, length) {
